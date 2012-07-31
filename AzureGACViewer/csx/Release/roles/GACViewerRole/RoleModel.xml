@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RoleModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="GACViewerRole" version="1.7.30602.1703" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <Runtime>
+    <EntryPoint>
+      <NetFxEntryPoint assemblyName="GACViewerRole.dll" targetFrameworkVersion="v3.5" />
+    </EntryPoint>
+  </Runtime>
+  <Properties>
+    <Property name="TargetFrameworkVersion" value="v4.0" />
+    <Property name="RoleType" value="Web" />
+    <Property name="RoleName" value="GACViewerRole" />
+    <Property name="ProjectName" value="GACViewerRole" />
+    <Property name="Configuration" value="Release" />
+    <Property name="Platform" value="AnyCPU" />
+    <Property name="RoleTargetFramework" value="v4.0" />
+    <Property name="OutputDir" value="C:\workspaces\AzureGACViewer\AzureGACViewer\obj\Release\GACViewerRole\" />
+    <Property name="EntryPoint" value="GACViewerRole.dll" />
+    <Property name="SourceDir" value="C:\workspaces\AzureGACViewer\GACViewerRole\" />
+    <Property name="SitePhysicalPath" value="C:\workspaces\AzureGACViewer\AzureGACViewer\obj\Release\GACViewerRole\" />
+    <Property name="TargetRuntimeVersion" value="v4.0" />
+  </Properties>
+  <Sites>
+    <Site name="Web" physicalDirectory="C:\workspaces\AzureGACViewer\AzureGACViewer\obj\Release\GACViewerRole\">
+      <Bindings>
+        <Binding name="HttpIn" endpointName="HttpIn" />
+      </Bindings>
+    </Site>
+  </Sites>
+</RoleModel>
